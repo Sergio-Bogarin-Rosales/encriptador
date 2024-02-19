@@ -3,19 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.js">
+    <title>Encriptador de texto</title>
 </head>
-<body>
-    <header>
+<body class="body">
+    <div class="margen">
+        <header class="header">
+            <div class="header-titulo">
+                <img class="imagen-logo" src="imgenes/Logo.png" alt="Logo de Alura Latam" > 
+                <h1 class="titulo-encabesado">Encriptador de texto</h1>
+            </div>
+        </header>
 
-    </header>
+        <main class="main">
 
-    <main>
+            <div class="caja-encriptador">
+                <div class="caja-texto">
+                    <textarea class="texto-encriptador" name="" class="area-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                </div>
 
-    </main>
-    
-    <footer>
+                <div class="caja-botonera-guia">
+                    <div class="caja-mensaje-guia">
+                        <img src="imgenes/bi_exclamation-circle-fill.png" alt="imagen de alvertencia">
+                        <p class="mensaje-guia">Solo letras minúsculas y sin acentos</p>
+                    </div>
 
+                    <div class="caja-botonera">
+                        <input type="submit" class="botton-accion" id="Boton-encriptar" value="Encriptar">
+                        <input type="submit" class="botton-accion" id="Boton-desencriptar" value="Desencriptar">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="caja-mensaje-codificado">
+                <div class="caja-interna-codificador">    
+                    <img class="imagen-visualisacion" src="imgenes/Muñeco.png" alt="persona inspeccionando">
+                    <div class="caje-texto-mensaje-encriptado">
+                        <p class="mensaje-codificador-estado">Ningún mensaje fue encontrado</p>
+                        <p class="mensaje-codificador-ayuda">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <footer class="caja-footer">
+        <p class="copyright">&copy Copyright Sergio Bogarin Rosales</p>
     </footer>
 </body>
 </html>
