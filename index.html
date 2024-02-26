@@ -23,9 +23,9 @@
 
     <main class="main">
 
-        <div class="caja-encriptador">
+        <section class="caja-encriptador">
             <div class="caja-texto">
-                <textarea class="texto-encriptador" name="" class="area-texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea class="texto-encriptador" name=""  cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             </div>
 
             <div class="caja-botonera-guia">
@@ -35,25 +35,33 @@
                 </div>
 
                 <div class="caja-botonera">
-                    <input type="submit" class="botton-accion" id="Boton-encriptar" value="Encriptar">
-                    <input type="submit" class="botton-accion" id="Boton-desencriptar" value="Desencriptar">
+                    <input type="submit" class="botton-accion" id="Boton-encriptar" value="Encriptar" onclick="botonEncriptar()">
+                    <input type="submit" class="botton-accion" id="Boton-desencriptar" value="Desencriptar" onclick="botonDesencriptar()">
                 </div>
             </div>
-        </div>
+        </section>
         
-        <div class="caja-mensaje-codificado">
-            <div class="caja-interna-codificador">    
-                <img class="imagen-visualisacion" src="imgenes/Muñeco.png" alt="persona inspeccionando">
+        <section class="caja-mensaje-codificado">
+            <div class="caja-interna-codificador" id="caja-prueba">    
+                <img class="imagen-decodificador" src="/imgenes/Muñeco.png" alt="">
                 <div class="caje-texto-mensaje-encriptado">
                     <p class="mensaje-codificador-estado">Ningún mensaje fue encontrado</p>
                     <p class="mensaje-codificador-ayuda">Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
             </div>
-        </div>
+
+            <div class="caje-btn-desencriptar">
+                <textarea class="texto-desencriptado" name="" id="" cols="30" rows="10" disabled="disabled" ></textarea>
+                <button class="button-copiar" onclick="copy()">Copiar</button>
+            </div>
+            
+        </section>
 
     </main>
     <footer class="caja-footer">
         <p class="copyright">&copy Copyright Sergio Bogarin Rosales</p>
     </footer>
+    <script src="/app.js"></script>
 </body>
 </html>
+
